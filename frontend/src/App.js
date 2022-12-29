@@ -35,7 +35,7 @@ function App() {
     checkLoggedIn();
   }, []);
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
     <UserContext.Provider value={{ userData, setUserData }}>
       <Header />
       <Switch>
@@ -44,7 +44,7 @@ function App() {
         <Route exact path="/user/login"><Login/></Route>
       </Switch>
       </UserContext.Provider>
-  </BrowserRouter>
+  // </BrowserRouter>
   );
 }
 
